@@ -53,14 +53,12 @@ def commit():
             showerror("영민", show[i]+"를 적어주세요")
     
     f = open("saveself.txt", 'w') #txt파일에 접근해서 save 파일을 만든다.
-    #lines = f.readlines()
-    # if(not f.readlines()):/
-        for i in range(5):
-            data = func[i]+" "
-            f.write(data)
-        f.close()
+    for i in range(5):
+        data = func[i]+" "
+        f.write(data)
     else:
         print("정보가 이미 있습니다.")
+    f.close()
 
 
 # 입력을 위한 변수
