@@ -51,7 +51,16 @@ def commit():
             func.append(str(entry[i].get()))  # func에 하나씩 차곡차곡 저장
         else:
             showerror("영민", show[i]+"를 적어주세요")
-    # entry[i]
+    
+    f = open("saveself.txt", 'w') #txt파일에 접근해서 save 파일을 만든다.
+    #lines = f.readlines()
+    # if(not f.readlines()):/
+        for i in range(5):
+            data = func[i]+" "
+            f.write(data)
+        f.close()
+    else:
+        print("정보가 이미 있습니다.")
 
 
 # 입력을 위한 변수
